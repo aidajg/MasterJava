@@ -11,11 +11,9 @@ public class Main {
 		System.out.println(diario.toString());
 		
 		//cuál tiene más páginas
-		if(narnia.getPaginas() > diario.getPaginas()) {
-			System.out.println("\n>>Narnia tiene más páginas que El Diario de Ana Frank.");
-		}else {
-			System.out.println("\n>>El Diario de Ana Frank tiene más páginas que Narnia.");
-		}
-	
+		narnia.masPaginas(narnia, diario);
+		
+		//cuántos libros hay
+		System.out.println("\nSe han registrado: " + Libro.contador + " libros.");
 	}
 }
