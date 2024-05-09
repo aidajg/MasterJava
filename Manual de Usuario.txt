@@ -1,0 +1,31 @@
+Tratamiento de datos y navegación (Gestión de productos -> Tienda Online)
+
+TiendaOnline() -->
+Método listarTodos() devuelve array declarado con productos por defecto
+Método agregarProducto() fusiona el array declarado con un List<Producto> de productos nuevos,
+siempre que no sea nulo
+
+Producto
+Atributos, constructor, get y set, toString
+
+OPCIONES
+--------
+Buscar
+Envía formulario a buscarAlmacen.jsp -> Obtiene categoría, instancia TiendaOnline() para
+llamar al método listarTodos() y almacena el array resultado en un List<Producto>.
+De la sesion, se obtiene el atributo "nuevos" -> arraylist que almacena los nuevos productos
+que se vayan a almacenar. Mediante tienda.agregarProducto(nuevos) se fusionan los arrays.
+
+Agregar
+Rellenar el formulario
+Validación --> Nombre solo admite caracteres, ni espacios en blanco ni vacíos.
+Pvp y stock no admiten ceros, ni caracteres, ni espacios en blanco, ni números negativos.
+
+Eliminar
+Solo se podrán borrar aquellos productos que sean nuevos, no los que sean por defecto.
+Eliminación por nombre.
+
+Modificar
+Se busca producto por nombre y se cambia su pvp.
+Solo se podrán modificar aquellos productos que sean nuevos, no los que sean por defecto.
+
