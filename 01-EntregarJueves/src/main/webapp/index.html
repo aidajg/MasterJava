@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Almacén de Productos</title>
+</head>
+<body>
+<style>
+	body
+	{
+	font-family: sans-serif;
+	}
+	
+	h2
+	{
+	text-shadow: 1px 2px 5px rgba(164,16,143,0.8);
+	margin-left: 160px;
+	}
+	
+	li{
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	line-height: 16px;
+	padding: 6px;
+	margin-left:18px;
+	border-radius: 10px;
+	text-decoration: none;
+	background-image: linear-gradient(rgb(105, 18, 153) 0%, rgb(219, 24, 173) 52%, rgb(133, 25, 83) 100%);
+	box-shadow: rgba(153, 47, 128, 0.81) -1px 4px 28px 0px inset;
+	border: 2px solid rgb(28, 110, 164);
+	display: inline-block;
+	}
+	
+	li:hover
+	{
+	background-image: linear-gradient(rgb(217, 107, 255) 0%, rgb(134, 36, 158) 52%, rgb(255, 122, 206) 100%);
+	border:2px solid white;
+	}
+	
+	a
+	{
+	color:white;
+	text-decoration:none;
+	}
+	
+</style>
+	<!-- 
+Diseñar una aplicación web que permita realizar la gestión de los productos de un almacen.
+Los productos se encuentran en secciones, tienen un  precio y se dispondrá de una stock.
+Se tiene que poder:
+* realizar búsquedas por sección
+* realizar altas de productos (indicando su sección, el nombre del producto, el precio y el stock)
+* modificar el precio de un producto
+* eliminar un producto
+ -->
+
+	<h2>Menú principal</h2>
+	<ul>
+		<li><a href="buscar.html">Búsqueda</a></li>
+		<li><a href="agregar.html">Agregar</a></li>
+		<li><a href="eliminar.jsp">Eliminar</a></li>
+		<li><a href="modificar.jsp">Modificar</a></li>
+	</ul>
+
+</body>
+</html>
