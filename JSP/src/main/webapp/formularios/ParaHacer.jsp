@@ -34,5 +34,16 @@ Tú decides los datos de la persona.
  <input type="submit" value="Nota media">
  </form>
  
+ 
+  <h2>Registrar Persona</h2>
+ <form action="datosPersona.jsp" method="post">
+ Nombre: <input type=text name="nombre"><br>
+ Apellido: <input type="text" name="ape"><br>
+ Edad: <input type="text" name="edad"><br>
+ DNI: <input type="text" name="dni"><br>
+ Puesto: <input type="text" name="puesto"><br>
+ <input type="submit" value="Registro">
+ </form>
+ 
 </body>
 </html>
