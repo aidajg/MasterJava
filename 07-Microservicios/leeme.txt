@@ -1,0 +1,17 @@
+1 - Crear proyecto y poner dependencias (Starter Spring Web)
+
+2 - Definir modelo
+
+3 - Trabajar con la capa servicio
+ 	3.1 - Interfaz
+ 	3.2 - Clase que la implementa
+ 	
+4 - Controlador
+
+5 - Configuraciones
+	5.1 - Indicar paquetes a scanear
+	5.2 - Crear el @Bean de RestTemplate
+	5.3 - Asignar un puerto válido y libre
+	
+6 - Testing en Postman
+	http://localhost:9090/ejemplar/isbn1/titulo2/tematica3
