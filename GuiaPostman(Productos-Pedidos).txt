@@ -1,0 +1,19 @@
+PRODUCTOS
+=========
+http://localhost:8000/almacen 		--> (GET)Return lista de productos
+http://localhost:8000/almacen/precios 	--> (GET)Esquema de precios según Tipo de producto, return String
+http://localhost:8000/producto/2 	--> (GET)Obtiene el pvp del producto mediante su código, return int
+http://localhost:8000/producto 		--> (POST)Mediante body JSON (codigo, nombre, stock, garantia, Tipo, pvp)
+					    agrega un nuevo producto al almacén, return lista de productos.
+http://localhost:8000/producto/1/5 	--> (PUT)Actualiza el stock de un producto mediante parámetro, return void
+
+
+PEDIDOS
+=======
+http://localhost:8000/pedidos	--> (GET)Return lista de pedidos
+http://localhost:8000/pedido 	--> (POST)Mediante body JSON (nombre, stock, tipo, pvp) se hace el pedido
+				    (si encuentra el producto y su stock es suficiente) y se actualiza el 
+				     stock en la lista del almacén. Si el stock del producto llega a 0,
+				     se elimina su registro del almacén. Return lista de pedidos actualizada.
+
++++ Se usa solo un puerto (8000)
